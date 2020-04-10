@@ -1,6 +1,6 @@
 {
   "name": "wiki-to-html",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Wikipedia html downloading cli (for testing purposes)",
   "main": "src/index.js",
   "scripts": {
