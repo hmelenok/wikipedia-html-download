@@ -1,6 +1,6 @@
 {
-  "name": "wikipedia-html-download",
-  "version": "1.0.0",
+  "name": "wiki-html-download",
+  "version": "0.0.0",
   "description": "Wikipedia html downloading cli (for testing purposes)",
   "main": "src/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "lib/"
   ],
   "bin": {
-    "wikipedia-html-download": "bin/wikipedia-html-download"
+    "wiki-html-download": "bin/wiki-html-download"
   },
   "author": "Mykyta Khmel",
   "license": "MIT",
