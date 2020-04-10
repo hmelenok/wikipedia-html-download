@@ -1,0 +1,46 @@
+{
+  "name": "wikipedia-html-download",
+  "version": "1.0.0",
+  "description": "Wikipedia html downloading cli (for testing purposes)",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "rm -rf lib/ && babel src --out-dir lib --ignore '**/*.test.ts' --extensions '.ts'",
+    "start": "yarn build && node ./lib/cli.js",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch"
+  },
+  "files": [
+    "bin/",
+    "lib/"
+  ],
+  "bin": {
+    "wikipedia-html-download": "bin/wikipedia-html-download"
+  },
+  "author": "Mykyta Khmel",
+  "license": "MIT",
+  "dependencies": {
+    "arg": "^4.1.1",
+    "cheerio": "^1.0.0-rc.3",
+    "esm": "^3.2.25",
+    "inquirer": "^7.0.0",
+    "listr": "^0.14.3",
+    "lodash": "4.17.15",
+    "node-fetch": "^2.6.0",
+    "striptags": "^3.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.6.2",
+    "@babel/core": "7.6.2",
+    "@babel/node": "7.6.2",
+    "@babel/plugin-proposal-object-rest-spread": "7.6.2",
+    "@babel/preset-env": "7.6.2",
+    "@babel/preset-typescript": "7.6.0",
+    "@shelf/eslint-config": "0.7.0",
+    "babel-jest": "24.9.0",
+    "eslint": "6.5.0",
+    "husky": "3.0.7",
+    "lint-staged": "9.4.0",
+    "prettier": "1.18.2",
+    "typescript": "3.6.3"
+  }
+}
